@@ -1,0 +1,112 @@
+/* Base Page Styles */
+body {
+    background-color: #d1e7e5; /* Light greenish-blue background texture substitute */
+    font-family: "Courier New", Courier, monospace; /* Example clean layout font */
+    margin: 20px;
+    padding: 0;
+}
+
+#container {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #b2dfdb;
+    overflow: hidden; /* Clears floats automatically */
+}
+
+/* Header Styling */
+#header {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#header h1 {
+    color: #00897b;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0;
+}
+
+#header .subtitle {
+    color: #00bfa5;
+    font-size: 1.2em;
+    margin: 5px 0 0 0;
+}
+
+/* Sidebar (Friends Box) - Applying Float & Box properties */
+#sidebar {
+    float: left;
+    width: 22%;
+    background-color: #00bfa5;
+    border: 2px solid #00897b;
+    padding: 15px;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+
+#sidebar h2 {
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#sidebar ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+#sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content & Entries Area */
+#main-content {
+    float: left;
+    width: 75%;
+    box-sizing: border-box;
+}
+
+.entry {
+    border: 2px solid #b2dfdb;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    overflow: hidden; /* Keeps image inside the entry box boundary */
+}
+
+.entry-title {
+    color: #00bfa5;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.title-text {
+    font-weight: bold;
+}
+
+.entry-body {
+    display: flex; /* Ensures text and image sit side-by-side cleanly */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.entry-text {
+    color: #00897b;
+    width: 65%;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.entry-img {
+    width: 30%;
+    max-height: 150px;
+    object-fit: contain;
+    border: 1px solid #b2dfdb;
+}
